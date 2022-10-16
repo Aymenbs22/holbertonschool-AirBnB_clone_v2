@@ -12,6 +12,7 @@ from fabric.api import local
 
 
 def do_pack():
+    """Fabric script that generates"""
     try:
         date = datetime.now().strftime("%Y%m%d%H%M%S")
         if isdir("versions") is False:
